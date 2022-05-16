@@ -1,4 +1,4 @@
-import sklearn.metrics as metrics.
+import sklearn.metrics as metrics
 
 labels_index = {'background': 0, 'method': 1, 'result': 2}
 

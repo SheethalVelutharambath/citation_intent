@@ -134,7 +134,7 @@ if __name__ == "__main__":
     y_pred = percep.predict_ovr(np.array(test_doc_vectors_same_norm))
     print(evaluate(test_gold_labels, y_pred))
 
-    ## evaluate on test dataset.
+    ## evaluate on test dataset
     print("evaluating on test data file")
     test_doc_vectors, _, test_gold_labels = pr.get_features_from_doc(pr.test_docs, pr.test_label_doc)
     new_test_doc_vectors_same_norm = pr.get_norm_docs(test_doc_vectors)
