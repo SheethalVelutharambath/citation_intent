@@ -1,6 +1,9 @@
 import numpy as np
 from tqdm import tqdm
 
+import numpy as np
+from tqdm import tqdm
+
 class Perceptron(object):
     def __init__(self, lr=0.2, itrs=100):
         self.lr = lr
@@ -13,17 +16,17 @@ class Perceptron(object):
         for i in tqdm(range(len(Y[0]))):
             print('Training: Class', count, 'vs Rest Classes')
             W = np.zeros(X.shape[1])
-            #print(W)
-            #print(W.shape)
+            print(W)
+            print(W.shape)
             cost = []
             Y_ovr = Y[:, count]
-            #print(Y_ovr)
+            print(Y_ovr)
             for iteration in range(self.itrs):
                 Z = X.dot(W)
                 H = self.sigmoid(Z)
                 W = self.gradient_desc(X, H, W, Y_ovr)
                 cost.append(self.cal_cost(H, W, Y_ovr))
-                if iteration % 5000 == 0:
+                if (iteration % 50 == 0):
                     print(self.cal_cost(H, W, Y_ovr))
             self.W.append((i, W))
             self.cost.append((i, cost))

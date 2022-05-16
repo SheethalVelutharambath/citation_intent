@@ -128,17 +128,17 @@ if __name__ == "__main__":
     test_doc_vectors_same_norm = doc_vectors_same_norm[6500:]
     test_gold_labels = gold_labels[6500:]
 
-    logreg = Perceptron(lr=0.5, itrs=100000).fit_onevsall(np.array(train_doc_vectors_same_norm),
+    percep = Perceptron(lr=0.5, itrs=100000).fit_onevsall(np.array(train_doc_vectors_same_norm),
                                                           np.array(train_one_hotted_labels_same))
 
-    y_pred = logreg.predict_ovr(np.array(test_doc_vectors_same_norm))
+    y_pred = percep.predict_ovr(np.array(test_doc_vectors_same_norm))
     print(evaluate(test_gold_labels, y_pred))
 
     ## evaluate on test dataset
     print("evaluating on test data file")
     test_doc_vectors, _, test_gold_labels = pr.get_features_from_doc(pr.test_docs, pr.test_label_doc)
     new_test_doc_vectors_same_norm = pr.get_norm_docs(test_doc_vectors)
-    test_y_pred = logreg.predict_ovr(np.array(new_test_doc_vectors_same_norm))
+    test_y_pred = percep.predict_ovr(np.array(new_test_doc_vectors_same_norm))
     print(evaluate(test_gold_labels, test_y_pred))
 
 

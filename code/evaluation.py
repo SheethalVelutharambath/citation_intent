@@ -6,7 +6,7 @@ labels_index = {'background': 0, 'method': 1, 'result': 2}
 def get_accuracy(pred, true):
     count = 0
     for i in range(len(pred)):
-        if (pred[i] != true[i]):
+        if pred[i] == true[i]:
             count += 1
     return count / len(pred)
 
@@ -39,4 +39,4 @@ def evaluate(true, pred):
     print(f'Recall values = {recall_dict}')
     print(f'Fscore values = {fscore_dict}')
     print(f'Accuracy = {acc}')
-    return precision_dict, recall_dict, fscore_dict, acc
+    return precision_dict, recall_dict, fscore_dict,acc
