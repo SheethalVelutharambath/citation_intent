@@ -158,7 +158,7 @@ if __name__ == "__main__":
     test_gold_labels= [labels_index[v] for v in pr.test_label_doc]
     print(evaluate(test_gold_labels, test_y_pred))
 
-    ## evaluate on dev dataset
+    ## evaluate on dev dataset.
     print("evaluating on dev data file")
     dev_tf_idf_encoding, _ = pr.get_features_from_doc(pr.dev_docs, pr.dev_label_doc, train=False)
     dev_y_pred = percep.predict_ovr(np.array(dev_tf_idf_encoding))
