@@ -10,7 +10,7 @@ class Perceptron(object):
         self.itrs = itrs
         self.W = []
         self.cost = []
-
+    # implementing perceptron using one vs rest strategy for multi-class
     def fit_onevsall(self, X, Y):
         count = 0
         for i in tqdm(range(len(Y[0]))):
@@ -32,7 +32,7 @@ class Perceptron(object):
             self.cost.append((i, cost))
             count = count + 1
         return self
-
+    # updating weights using gradient descent
     def gradient_desc(self, X, H, W, Y):
         gradient = np.dot((H - Y), X) / Y.size
         W = W - self.lr * gradient
