@@ -9,11 +9,14 @@ The Repository is structured as follows:
 - The code folder contains python codes of the Baseline PErceptron model, Traditional Machine Classifiers used for the code and the LSTM, BiLSTM codes for classification with and without POS tags
 -  The Notebooks folder contains the jupyter notebooks for all the code implementations
 -  The data folder contains the datsets as well as other forms of documents used in code implementations
--  There are codes that may require softwares outside this environment to run the code
+-  Few codes may require softwares outside this environment to run the code 
 
+For the task of intent classification, a main architecture of BiLSTM and GloVe embeddings has been employed and been tested with and without POS tags for where the features were generated of the token_tag type.
 
+Peformance of the models has been evaluated using the Accuracy, Precison, Recall and F1 score metrics.
 
+The Libraries mainly used in this work are:
+-Tensorflow
+-SkLearn
+-nltk
 
-
-### References 
-- **Citation Intent Classification Using Word Embedding** MUHAMMAD ROMAN1, ABDUL SHAHID 1, SHAFIULLAH KHAN 1, ANIS KOUBAA2,3, AND LISU YU
