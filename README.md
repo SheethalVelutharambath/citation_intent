@@ -1,8 +1,5 @@
 # Citation Intent Classification
-This project deals with classification of citation intent in scientific publications.
-
-This repository has been authored by Tejaswi Choppa and Sheethal Velutharambath based on our models for checking if adding POS tags to the features improves the performance of the models or not.
-
+This project deals with classification of citation intent in scientific publications. We have developed various models for classification. We also have tried to predict the impact of POS tags on citation classification.
 
 ## Installation
 
@@ -69,3 +66,10 @@ The Libraries mainly used in this work are:
 -nltk
 ```
 
+Contribitors
+
+RECOMMENDED MODULES
+-------------------
+
+ * [Sheethal Velutharambath](https://github.com/SheethalVelutharambath)
+ * [Tejaswi Choppa](https://github.com/choppa98)
