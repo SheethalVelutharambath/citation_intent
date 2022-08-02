@@ -61,7 +61,7 @@ Peformance of the models has been evaluated using the Accuracy, Precison, Recall
 
 # Thesis Paper
 
-The paper on this concept can be found [here](https://github.com/SheethalVelutharambath/citation_intent/blob/main/Citation%20intent%20classification%20using%20POS%20features.pdf)
+The paper on this concept can be found [here](https://github.com/SheethalVelutharambath/citation_intent/blob/main/Citation%20intent%20classification%20using%20POS%20features.pdf).
 
 # Packages and Libraries
 
