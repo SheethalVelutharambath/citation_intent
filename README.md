@@ -59,6 +59,10 @@ For the task of intent classification, a main architecture of BiLSTM and GloVe e
 
 Peformance of the models has been evaluated using the Accuracy, Precison, Recall and F1 score metrics.
 
+# Thesis Paper
+
+The paper on this concept can be found [here](https://github.com/SheethalVelutharambath/citation_intent/blob/main/Citation%20intent%20classification%20using%20POS%20features.pdf)
+
 # Packages and Libraries
 
 The packages and libraries used can be found in the `requirements.txt` files in respective code directories.
