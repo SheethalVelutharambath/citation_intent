@@ -59,12 +59,9 @@ For the task of intent classification, a main architecture of BiLSTM and GloVe e
 
 Peformance of the models has been evaluated using the Accuracy, Precison, Recall and F1 score metrics.
 
-The Libraries mainly used in this work are:
-```
--Tensorflow
--SkLearn
--nltk
-```
+# Packages and Libraries
+
+The packages and libraries used can be found in the `requirements.txt` files in respective code directories.
 
 # Contribitors
 
