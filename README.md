@@ -66,10 +66,7 @@ The Libraries mainly used in this work are:
 -nltk
 ```
 
-Contribitors
-
-RECOMMENDED MODULES
--------------------
+# Contribitors
 
  * [Sheethal Velutharambath](https://github.com/SheethalVelutharambath)
  * [Tejaswi Choppa](https://github.com/choppa98)
